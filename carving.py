@@ -95,6 +95,7 @@ while image.shape[1] > margin:
     plt.imshow(image)
     plt.draw()
     plt.pause(0.001)
+    
 # def init():
 #     # im.set_data(im.get_array().astype(np.float) / 256.0)
 #     return [im]

@@ -6,13 +6,11 @@
 
 using namespace cv;
 
-/** @function main */
-int main( int argc, char** argv )
-{
+int main( int argc, char** argv) {
 
   Mat src, src_gray, src_blur, path;
   Mat grad, grad2;
-  char* window_name = "Sobel Demo - Simple Edge Detector";
+  char* window_name = "Seam Carving";
   int scale = 1;
   int delta = 0;
   int ddepth = CV_16S;
@@ -69,11 +67,11 @@ int main( int argc, char** argv )
       }
     }
 
-    imshow( window_name, grad );
-    waitKey(0);
+    // imshow( window_name, grad );
+    // waitKey(0);
 
-    imshow(window_name, path);
-    waitKey(0);
+    // imshow(window_name, path);
+    // waitKey(0);
 
     int row = path.rows - 1;
     cv::Point min_loc;
